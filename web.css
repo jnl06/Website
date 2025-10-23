@@ -1,0 +1,144 @@
+.navbar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: transparent;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font: Lato, sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: gold;
+    transform: scale(1.05);
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    background: linear-gradient(180deg, #FFD700 17.39%, #998100 75.36%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Abril Fatface";
+    font-size: 70px;
+}
+
+h2, h4{
+    color: rgba(255, 215, 0, 0.65);
+    font: "Lato" 20px;
+}
+
+h4{
+    text-align: center;
+    padding: 5px;
+}
+
+.btn{
+    display: block;
+    margin: 40px auto;
+    border: 2px solid gold;
+    background: transparent;
+    border-radius: 15px;
+    padding: 12px 20px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.btn:hover{
+    background: gold;
+    color: black;
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+.description {
+    margin-top: 5%;
+    margin-left: -10%;
+    max-width: 600px;
+}
+
+.photo-container{
+    position: relative;
+    display: inline-block;
+}
+
+.photo-bg{
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    width: 70%;
+    height: 70%;
+    background: #FA0F13;
+    filter: blur(175px);
+    z-index: 0;
+}
+
+.photo {
+    position: relative;
+    object-fit: cover;
+    margin: 0px;
+    line-height: 0;
+    width: 640px;
+    height: 700px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.rectangle {
+    background: #FA0F13;
+    filter: blur(175px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    z-index: 0;
+}
